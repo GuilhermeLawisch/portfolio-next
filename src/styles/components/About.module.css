@@ -1,0 +1,73 @@
+.about {
+  margin-top: 200px;
+
+  display: grid;
+  grid-template-columns: 30% 60%;
+  gap: 10%;
+  align-items: center;
+
+  font-family: 'Roboto';
+  color: var(--title);
+}
+
+.left {
+  text-align: center;
+}
+
+.imageProfile {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  padding: .65rem;
+  border: 0.33rem solid #8be9fd;
+}
+
+.h2Name {
+  font-family: 'Raleway';
+  color: var(--text);
+  font-size: 2rem;
+}
+
+.linkIcons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40%;
+
+  margin: auto;
+
+  max-width: 12rem;
+}
+
+.h2Title {
+  margin: 5px 0 0px 60px;
+  font-size: 2.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 50px 0 0 0;
+}
+
+.p {
+  text-align: justify;
+  color: var(--text);
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 2.2rem;
+
+  margin: 10px 0 0 0;
+}
+
+.icon {
+  position: absolute;
+}
+
+.outsideIcon {
+  fill:transparent;stroke:var(--purple);stroke-width:2;
+}
+.insideIcon {
+  fill:var(--pink);stroke:var(--purple);stroke-width:1;
+}

@@ -1,0 +1,72 @@
+.resume {
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: 57.5% 22.5%;
+  gap: 20%;
+}
+
+.left {
+  color: var(--title);
+  font-family: 'Roboto';
+  font-weight: 300;
+}
+
+.h3 {
+  color: var(--cyan);
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: white;
+  font-size: 2.8rem;
+}
+
+.p {
+  color: var(--text);
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+.button {
+  max-width: 400px;
+  width: 75%;
+  height: 65px;
+
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  font-size: 1.2rem;
+
+  background: none;
+  color: var(--cyan);
+  border: 2px var(--cyan) solid;
+  border-radius: 5px;
+
+  transition: .6s;
+}
+
+.button:hover {
+  background: linear-gradient(90deg, rgba(72, 71, 136, 0.062) 0.45%, rgba(87, 74, 145, 0.1) 31.4%),#6322772a;
+  color: var(--purple);
+  border: 2px var(--purple) solid;
+}
+
+.right {
+  text-align: center;
+}
+
+.backgroundSvg {
+  fill: var(--current-line);stroke: var(--current-line);stroke-width:15;opacity:1;
+}
+.titleSvg {
+  fill: var(--cyan);stroke: var(--cyan);stroke-width:5;opacity:.95;
+}
+.subSvg {
+  fill: var(--purple);stroke: var(--purple);stroke-width:5;opacity:1;
+}
+.textSvg {
+  fill: var(--title);stroke: var(--title);stroke-width:5;opacity:.95;
+}

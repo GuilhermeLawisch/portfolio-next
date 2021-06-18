@@ -1,0 +1,60 @@
+.skills {
+  margin-top: 200px;
+}
+
+.title {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.outsideIcon {
+  fill:transparent;stroke:var(--purple);stroke-width:2
+}
+.insideIcon {
+  fill:var(--pink);stroke:var(--purple);stroke-width:1
+}
+
+.h2 {
+  color: var(--title);
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  
+  margin: -5px 0 0 10px;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.front { grid-area: front; }
+.backDatabase { grid-area: backdatabase; }
+
+.outside {
+
+  color: var(--title);
+
+  display: grid;
+  grid-template-areas: 
+  'front'
+  'backdatabase';
+  row-gap: 20px;
+}
+
+.front,
+.backDatabase {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.icons {
+  width: 125px;
+}
+
+.h3 {
+  font-family: 'Roboto';
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: var(--title);
+}

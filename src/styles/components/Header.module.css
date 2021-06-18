@@ -1,0 +1,67 @@
+.header {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: white;
+  background: none;
+}
+
+.divHeader {
+  position: relative;
+  width: 100%;
+
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: rgb(0, 0, 0);
+  background: none;
+}
+
+.h1 {
+  font-family: 'Roboto Mono';
+  padding-left: 2rem;
+  font-size: 2rem;
+  color: var(--cyan);
+  transition: 1s;
+}
+
+.h1:hover {
+  color: var(--purple);
+  transition: 1s;
+}
+
+.span {
+  color: var(--purple);
+}
+
+.right .nav .ul {
+  display: flex;
+  list-style: none;
+  padding: 2.5rem;
+}
+
+.right .nav .ul .li {
+  transition: all .2s;
+}
+
+.right .nav .ul .li .a {
+  text-decoration: none;
+  color: var(--cyan);
+
+  font-family: 'Roboto Mono';
+  font-size: 1.6rem; 
+
+  padding: 0 1.5rem;
+  transition: all 250ms linear 0s;
+}
+
+.right .nav .ul .li .a:hover {
+  color: var(--purple);
+  transition: 1s;
+}
