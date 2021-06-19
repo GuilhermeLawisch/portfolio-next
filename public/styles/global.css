@@ -2,11 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
+
 body {
   max-width: 1279px;
   width: 90%;
   margin: auto;
-  background-color: var(--background);
+  background-image: url("../images/backgroundupdate.jpg");
+
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 :root {

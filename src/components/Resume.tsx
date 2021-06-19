@@ -7,7 +7,7 @@ export const Resume = () => {
         <div className={styles.left}>
           <h3 className={styles.h3}>Desenvolvedor Full-Stack</h3>
           <h2 className={styles.h2}>Guilherme Lawisch</h2>
-          <p className={styles.p}>Sempre em busca de agregar a equipe, tendo em vista que, sempre a algo novo para aprender e compartilhar.</p>
+          <p className={styles.p}>Sempre em busca de agregar a equipe, tendo em vista que, nunca sabaremos tudo, por isso precisamos estar dispostos a aprender e ensinar.</p>
           <a href="images/guilhermelawisch.pdf" download><button className={styles.button}>Baixar Currículo</button></a>
         </div>
         <div className={styles.right}>
