@@ -11,7 +11,7 @@ export const Resume = () => {
           <a href="images/guilhermelawisch.pdf" download><button className={styles.button}>Baixar Currículo</button></a>
         </div>
         <div className={styles.right}>
-          <svg width="400" height="400">
+          <svg width="240" height="290" className={styles.svg}>
             <rect x="10" y="10" rx="10" ry="10" width="220" height="265" className={styles.backgroundSvg}/>
             <rect x="75" y="22" rx="5" ry="5" width="90" height="20" className={styles.titleSvg}/>
             <rect x="22" y="60" rx="5" ry="5" width="60" height="20" className={styles.subSvg}/>

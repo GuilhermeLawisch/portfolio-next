@@ -44,36 +44,35 @@
 
 .layoutOutside {
   position: relative;
-  left: 20px;
 
   background-color: var(--cyan);
 
-  width: 340px;
-  height: 200px;
+  width: 360px;
+  height: 20px;
 
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 .cardBackground {
   position: relative;
-  top: -210px;
+  top: -38px;
 
   background-color: var(--current-line);
 
   margin-top: 25px;
 
-  width: 380px;
+  width: 360px;
   height: 375px;
 
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
 }
 
 .image {
   position: relative;
   top: 17.5px;
 
-  width: 345px;
-  height: 190px;
+  width: 330px;
+  height: 180px;
 
   border-radius: 10px;
   margin-bottom: 15px;
@@ -82,4 +81,31 @@
 .h3 {
   font-weight: 300;
   font-size: 1.4rem;
+
+  margin: 1.4rem;
+}
+
+@media (max-width: 500px) { 
+  .cards {
+    justify-content: center;
+  }
+
+  .layoutOutside,
+  .cardBackground {
+    width: 290px;
+  }
+
+  .cardBackground {
+    height: 320px;
+  }
+  
+  .image {
+    top: 15px;
+  
+    width: 265px;
+    height: 150px;
+  
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
 }

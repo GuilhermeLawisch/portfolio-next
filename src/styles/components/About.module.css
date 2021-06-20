@@ -11,6 +11,7 @@
 }
 
 .left {
+  margin: auto;
   text-align: center;
 }
 
@@ -26,6 +27,8 @@
   font-family: 'Raleway';
   color: var(--text);
   font-size: 2rem;
+
+  margin: 1.8rem 0;
 }
 
 .linkIcons {
@@ -70,4 +73,39 @@
 }
 .insideIcon {
   fill:var(--pink);stroke:var(--purple);stroke-width:1;
+}
+
+@media (max-width: 500px) {
+  .about {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .h3 {
+    margin: 25px 0 0 0;
+  }
+
+  .imageProfile {
+    width: 16rem;
+    height: 16rem;
+  }
+  
+  .h2Name {
+    font-size: 2.4rem;
+  }
+  
+  .linkIcons {
+    max-width: 14rem;
+  }
+
+  .icon {
+    position: relative;
+    top: 50px;
+    left: -50px;
+  }
+
+  .p {
+    text-indent: 50px;
+  }
 }

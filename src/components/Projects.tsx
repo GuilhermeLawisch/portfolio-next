@@ -23,17 +23,13 @@ export const Projects = () => {
             </div>
           </a>
           <a href="http://" target="_blank" rel="noopener noreferrer" className={styles.card}>
-            <div className={styles.layoutOutside}>
-
-            </div>
+            <div className={styles.layoutOutside} />
             <div className={styles.cardBackground}>
 
             </div>
           </a>
           <a href="http://" target="_blank" rel="noopener noreferrer" className={styles.card}>
-            <div className={styles.layoutOutside}>
-
-            </div>
+            <div className={styles.layoutOutside} />
             <div className={styles.cardBackground}>
               <img src="images/jobscalc.png" alt="" className={styles.image}/>
               <h3 className={styles.h3}>Website - Cálculo de Salário</h3>

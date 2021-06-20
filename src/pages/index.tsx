@@ -1,4 +1,6 @@
 import Head from 'next/head'
+
+import GlobalStyles from '../styles/Global'
 import { Header } from '../components/Header'
 import { Resume } from '../components/Resume'
 import { About } from '../components/About'
@@ -13,19 +15,15 @@ export default function HomePage() {
       <Head>
         <title>Portfolio Guilherme Lawisch</title>
       </Head>
+
+      <GlobalStyles />
       
       <Header/>
-
       <Resume/>
-
       <About/>
-
       <Skills/>
-
       <Projects/>
-
       <Contact/>
-
       <Footer/>
     </>
   )

@@ -30,7 +30,6 @@
 .backDatabase { grid-area: backdatabase; }
 
 .outside {
-
   color: var(--title);
 
   display: grid;
@@ -38,6 +37,9 @@
   'front'
   'backdatabase';
   row-gap: 20px;
+
+  padding: 50px;
+  margin: auto;
 }
 
 .front,
@@ -45,8 +47,10 @@
   display: flex;
   align-items: center;
   text-align: center;
-  justify-content: space-between;
+  justify-content: space-between; 
+  flex-wrap: wrap;
 }
+
 
 .icons {
   width: 125px;
@@ -57,4 +61,20 @@
   font-size: 1.6rem;
   font-weight: 300;
   color: var(--title);
+}
+
+@media (max-width: 500px) {
+  .icons {
+    width: 110px;
+  }
+}
+
+@media (max-width: 320px) {
+  .outside {
+    padding: 20px;
+  }
+
+  .icons {
+    width: 90px;
+  }
 }
