@@ -39,10 +39,6 @@ export default createGlobalStyle`
       font-size: 75%; 
     }
 
-    body {
-      width: 100%;
-    }
-
     .menuSection #nav {
         display: none;
     }
