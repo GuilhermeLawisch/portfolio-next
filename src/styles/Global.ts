@@ -1,10 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
-
   * {
     margin: 0;
     box-sizing: border-box;
@@ -41,6 +37,83 @@ export default createGlobalStyle`
   @media (max-width: 500px) {
     * {
       font-size: 75%; 
+    }
+
+    body {
+      width: 100%;
+    }
+
+    .menuSection #nav {
+        display: none;
+    }
+  
+    #one,
+    #two,
+    #three {
+        background-color: var(--cyan);
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+  
+        transition-duration: 0.3s;
+    }
+  
+    #menuToggle {
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
+    }
+  
+    .menuSection.on {
+        position: absolute;
+        top:0;
+        left:0;
+        
+        width: 100vw;
+        height: 100vh;
+  
+        background-color: var(--background);
+        
+        z-index: 10;
+  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .menuSection.on #nav {
+        display: block;
+    }
+  
+    .menuSection.on #menuToggle {
+        position: absolute;
+        right: 22px;
+        top: 15px;
+    }
+  
+    .menuSection.on #menuToggle #one {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+  
+    .menuSection.on #menuToggle #two {
+        opacity: 0;
+    }
+  
+    .menuSection.on #menuToggle #three {
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+  
+    .menuSection.on #nav #ul {
+        text-align: center;
+        display: block;
+    }
+  
+    .menuSection.on #nav #ul li a{
+        transition-duration: 0.5s;
+        font-size: 2rem;
+        line-height: .6rem;
+        display: block;
+        padding: 2.2rem;
     }
   }
 `;

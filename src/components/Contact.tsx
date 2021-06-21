@@ -13,7 +13,7 @@ export const Contact = () => {
           </div>
           <h2 className={styles.h2}>Contato</h2>
         </div>
-        <p className={styles.p}>a vontade para entrar em contato comigo, será um prazer atende-lo</p>
+        <p className={styles.p}>Não esconda a vontade para entrar em contato comigo, será um prazer conversar com você.</p>
         <div className={styles.links}>
           <div className={styles.link}>
             <div className={styles.a}>
