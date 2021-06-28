@@ -86,10 +86,6 @@
 }
 
 @media (max-width: 500px) {
-  .outside {
-    margin-top: 100px;
-  }
-
   .cards {
     justify-content: center;
   }

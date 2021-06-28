@@ -7,11 +7,13 @@ export default createGlobalStyle`
   }
 
   body {
+    scroll-behavior: smooth;
+
     max-width: 1200px;
     width: 90%;
     margin: auto;
-    background-image: url("../images/backgroundupdate.jpg");
-
+    background-image: url("../images/background-low.jpg");
+    background-size: 100%;
     background-position: right;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -61,8 +63,17 @@ export default createGlobalStyle`
       font-size: 75%; 
     }
 
+    body {
+      background-size: cover;
+      background-position: center;
+    }
+
+    .divider {
+      margin: 50px 0;
+    }
+
     .menuSection #nav {
-        display: none;
+      display: none;
     }
   
     #one,
