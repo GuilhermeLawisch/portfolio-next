@@ -38,6 +38,9 @@ export const Projects = () => {
           </a>
         </div>
       </section>
+      <div className="divider">
+        <div className="divider-2" />
+      </div>
     </>
   )
 }

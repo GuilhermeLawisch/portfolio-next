@@ -17,6 +17,28 @@ export default createGlobalStyle`
     background-attachment: fixed;
   }
 
+  .divider {
+    margin: 150px 0;
+  }
+
+  .divider-1 {
+    height: 2px;
+    background: linear-gradient(
+      270deg,
+      hsla(272, 36%, 57%, 1) 0%,
+      hsla(272, 65%, 88%, 0) 100%
+    );
+  }
+
+  .divider-2 {
+    height: 2px;
+    background: linear-gradient(
+      90deg,
+      hsla(272, 36%, 57%, 1) 0%,
+      hsla(272, 65%, 88%, 0) 100%
+    );
+  }
+
   :root {
     --background: #282a36;
     --current-line: #44475a;	

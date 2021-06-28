@@ -6,7 +6,7 @@
   justify-content: space-between;
 
   color: white;
-  background: rgba(0, 0, 0, .4);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .divHeader {
@@ -47,7 +47,7 @@
 }
 
 .nav .ul .li {
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .nav .ul .li .a {
@@ -55,15 +55,34 @@
   color: var(--cyan);
 
   font-family: 'Roboto Mono';
-  font-size: 1.4rem; 
+  font-size: 1.4rem;
 
   padding: 0 1.5rem;
-  transition: all 250ms linear 0s;
+  transition: color 0.25s;
+  position: relative;
+  /* transition: all 250ms linear 0s; */
 }
 
 .nav .ul .li .a:hover {
   color: var(--purple);
-  transition: 1s;
+  transition: 0.25s;
+}
+
+.nav .ul .li .a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: var(--purple);
+
+  position: absolute;
+  left: 0;
+  bottom: -1.9rem;
+
+  transition: width 0.25s;
+}
+
+.nav .ul .li .a:hover::after {
+  width: 100%;
 }
 
 @media (max-width: 500px) {

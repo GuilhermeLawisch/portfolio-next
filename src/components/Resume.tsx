@@ -23,7 +23,9 @@ export const Resume = () => {
           </svg>      
         </div>
       </div>
-      
+      <div className="divider">
+        <div className="divider-1" />
+      </div>
     </>
   )
 }

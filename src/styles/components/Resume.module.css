@@ -1,5 +1,5 @@
 .resume {
-  margin-top: 200px;
+  margin: 200px 0;
   display: grid;
   grid-template-columns: 57.5% 30%;
   gap: 20%;
@@ -49,11 +49,17 @@
   border: 2px var(--cyan) solid;
   border-radius: 5px;
 
-  transition: .6s;
+  transition: 0.6s;
 }
 
 .button:hover {
-  background: linear-gradient(90deg, rgba(72, 71, 136, 0.062) 0.45%, rgba(87, 74, 145, 0.1) 31.4%),#6322772a;
+  cursor: pointer;
+  background: linear-gradient(
+      90deg,
+      rgba(72, 71, 136, 0.062) 0.45%,
+      rgba(87, 74, 145, 0.1) 31.4%
+    ),
+    #6322772a;
   color: var(--purple);
   border: 2px var(--purple) solid;
 }
@@ -65,16 +71,28 @@
 }
 
 .backgroundSvg {
-  fill: var(--current-line);stroke: var(--current-line);stroke-width:15;opacity:1;
+  fill: var(--current-line);
+  stroke: var(--current-line);
+  stroke-width: 15;
+  opacity: 1;
 }
 .titleSvg {
-  fill: var(--cyan);stroke: var(--cyan);stroke-width:5;opacity:.95;
+  fill: var(--cyan);
+  stroke: var(--cyan);
+  stroke-width: 5;
+  opacity: 0.95;
 }
 .subSvg {
-  fill: var(--purple);stroke: var(--purple);stroke-width:5;opacity:1;
+  fill: var(--purple);
+  stroke: var(--purple);
+  stroke-width: 5;
+  opacity: 1;
 }
 .textSvg {
-  fill: var(--title);stroke: var(--title);stroke-width:5;opacity:.95;
+  fill: var(--title);
+  stroke: var(--title);
+  stroke-width: 5;
+  opacity: 0.95;
 }
 
 @media (max-width: 1080px) {
@@ -94,7 +112,7 @@
   .left {
     order: 3;
   }
-  
+
   .right {
     order: 2;
     margin: auto;

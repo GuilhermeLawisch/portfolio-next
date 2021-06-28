@@ -1,5 +1,5 @@
 .title {
-  margin-top: 200px;
+  margin: 150px 0 50px;
 
   display: flex;
   text-align: center;
@@ -8,17 +8,21 @@
 }
 
 .outsideIcon {
-  fill:transparent;stroke:var(--purple);stroke-width:2
+  fill: transparent;
+  stroke: var(--purple);
+  stroke-width: 2;
 }
 .insideIcon {
-  fill:var(--pink);stroke:var(--purple);stroke-width:1
+  fill: var(--pink);
+  stroke: var(--purple);
+  stroke-width: 1;
 }
 
 .h2 {
   color: var(--title);
   font-family: 'Roboto';
   text-transform: uppercase;
-  
+
   margin: -5px 0 0 0px;
   font-size: 2.2rem;
   font-weight: 400;
@@ -34,7 +38,7 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  gap: 25px
+  gap: 25px;
 }
 
 .link {
@@ -85,6 +89,5 @@
 
   .pLink {
     font-size: 1.2rem;
-    text-align: left;
   }
 }

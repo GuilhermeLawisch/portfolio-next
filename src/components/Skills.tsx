@@ -68,6 +68,9 @@ export const Skills = () => {
           </div>
         </div>
       </section>
+      <div className="divider">
+        <div className="divider-1" />
+      </div>
     </>
   )
 }
