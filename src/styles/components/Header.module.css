@@ -61,7 +61,6 @@
   padding: 0 1.5rem;
   transition: color 0.25s;
   position: relative;
-  /* transition: all 250ms linear 0s; */
 }
 
 .nav .ul .li .a:hover {

@@ -6,9 +6,11 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
-  body {
+  html {
     scroll-behavior: smooth;
+  }
 
+  body {
     max-width: 1200px;
     width: 90%;
     margin: auto;
@@ -140,7 +142,7 @@ export default createGlobalStyle`
     .menuSection.on #nav #ul li a{
         transition-duration: 0.5s;
         font-size: 2rem;
-        line-height: .6rem;
+        line-height: 3rem;
         display: block;
         padding: 2.2rem;
     }
