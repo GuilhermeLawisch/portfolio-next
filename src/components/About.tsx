@@ -1,4 +1,5 @@
 import styles from '../styles/components/About.module.css'
+import { Divider } from './Divider';
 
 export const About = () => {
   return (
@@ -32,9 +33,7 @@ export const About = () => {
           <p className={styles.p}>Vi na programação uma maneira de mudar de vida, desde o começo percebi que não seria fácil, mas continuo estudando e enfrentando todas as dificuldades que encontro, pois sei nessa área o mais importante é não desistir</p>
         </div>
       </div>
-      <div className="divider">
-        <div className="divider-2" />
-      </div>
+      <Divider position="2"/>
     </>
   )
 }

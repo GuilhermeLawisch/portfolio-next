@@ -1,5 +1,7 @@
 import styles from '../styles/components/Resume.module.css'
 
+import { Divider } from './Divider'
+
 export const Resume = () => {
   return (
     <>
@@ -23,9 +25,7 @@ export const Resume = () => {
           </svg>      
         </div>
       </div>
-      <div className="divider">
-        <div className="divider-1" />
-      </div>
+      <Divider position="1" />
     </>
   )
 }

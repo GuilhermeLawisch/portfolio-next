@@ -1,4 +1,5 @@
 import styles from '../styles/components/Projects.module.css'
+import { Divider } from './Divider';
 
 export const Projects = () => {
   return (
@@ -38,9 +39,7 @@ export const Projects = () => {
           </a>
         </div>
       </section>
-      <div className="divider">
-        <div className="divider-2" />
-      </div>
+      <Divider position="2"/>
     </>
   )
 }
