@@ -4,7 +4,7 @@ import { Divider } from './Divider';
 export const Skills = () => {
   return (
     <>
-      <section className={styles.skills} id="skills">
+      <section className={styles.skills} id="skills" data-aos="fade-up">
         <div className={styles.title}>
           <div className={styles.icon}>
             <svg height="50" width="50">

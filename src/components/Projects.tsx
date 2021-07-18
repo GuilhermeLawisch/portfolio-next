@@ -15,7 +15,7 @@ export const Projects = () => {
           <h2 className={styles.h2}>Projetos</h2>
         </div>
         <div className={styles.cards}>
-          <a href="https://boanerges.vercel.app" target="_blank" rel="noopener noreferrer" className={styles.card}>
+          <a href="https://boanerges.vercel.app" target="_blank" rel="noopener noreferrer" className={styles.card} data-aos="fade-up-right">
             <div className={styles.layoutOutside} />
             <div className={styles.cardBackground}>
               <img src="images/boanerges.jpg" alt="site da padaria boanerges" className={styles.image}/>
@@ -23,13 +23,13 @@ export const Projects = () => {
               <p className={styles.p}></p>
             </div>
           </a>
-          <a href="http://" target="_blank" rel="noopener noreferrer" className={styles.card}>
+          <a href="http://" target="_blank" rel="noopener noreferrer" className={styles.card} data-aos="fade-up">
             <div className={styles.layoutOutside} />
             <div className={styles.cardBackground}>
 
             </div>
           </a>
-          <a href="http://" target="_blank" rel="noopener noreferrer" className={styles.card}>
+          <a href="http://" target="_blank" rel="noopener noreferrer" className={styles.card} data-aos="fade-up-left">
             <div className={styles.layoutOutside} />
             <div className={styles.cardBackground}>
               <img src="images/jobscalc.jpg" alt="" className={styles.image}/>

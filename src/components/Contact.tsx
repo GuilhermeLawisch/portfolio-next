@@ -3,7 +3,7 @@ import styles from '../styles/components/Contact.module.css'
 export const Contact = () => {
   return (
     <> 
-      <section id='contact'>
+      <section id='contact' data-aos="fade-up">
         <div className={styles.title}>
           <div className={styles.icon}>
             <svg height="50" width="50">

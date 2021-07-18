@@ -5,7 +5,7 @@ export const About = () => {
   return (
     <>
       <div className={styles.about} id="about">
-        <div className={styles.left}>
+        <div className={styles.left} data-aos="fade-up-right">
           <div className={styles.imageBox}>
             <img className={styles.imageProfile} src="https://avatars.githubusercontent.com/GuilhermeLawisch" alt="Foto de Guilherme Lawisch" />
           </div>
@@ -19,7 +19,7 @@ export const About = () => {
             </svg></a>
           </div>
         </div>
-        <div className={styles.right}>
+        <div className={styles.right} data-aos="fade-up-left">
           <div className={styles.icon}>
             <svg height="50" width="50">
               <polygon points="25,5 5,25 25,45 45,25" className={styles.outsideIcon}/>
