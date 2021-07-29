@@ -44,7 +44,7 @@ export const Projects = () => {
           <a href="https://imagebynasa.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.card} data-aos="fade-up">
             <div className={styles.layoutOutside} />
             <div className={styles.cardBackground}>
-              <img src="images/Image-by-NASA.png" alt="site de notícias" className={styles.image}/>
+              <img src="images/Image-By-NASA.png" alt="images da nasa" className={styles.image}/>
               <h3 className={styles.h3}>Image by NASA</h3>
               <p className={styles.p}>
                 Website que consome uma API disponibilizada pela NASA, que todo dia disponibiliza uma imagem e um texto explicando e descrevendo em que local do universo está localizado.
