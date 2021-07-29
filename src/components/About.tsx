@@ -3,15 +3,19 @@ import styles from '../styles/components/About.module.css'
 import { Divider } from './Divider';
 
 export const About = () => {
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 500);
+  const [isDesktop, setDesktop] = useState<boolean>(false);
 
   const updateMedia = () => {
-    setDesktop(window.innerWidth > 500);
+    if (typeof window !== "undefined") {
+      setDesktop(window.innerWidth > 500);
+    }
   };
 
   useEffect(() => {
-    window.addEventListener("resize", updateMedia);
-    return () => window.removeEventListener("resize", updateMedia);
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", updateMedia);
+      return () => window.removeEventListener("resize", updateMedia);
+    }
   });
 
   return (
