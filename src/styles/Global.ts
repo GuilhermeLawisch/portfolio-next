@@ -22,7 +22,7 @@ export default createGlobalStyle`
   }
 
   .divider {
-    margin: 150px 0;
+    margin: 100px 0;
   }
 
   .divider-1 {
