@@ -1,12 +1,31 @@
+import cx from 'classnames'
+import { useEffect, useState } from 'react';
 import { Container } from '../styles/components/Skills'
 import { Divider } from './Divider';
 
 export const Skills = () => {
+  const [positionIcon, setPositionIcon] = useState<number>(0)
+
+  const timer = () => {
+    if (positionIcon === 5) {
+      setPositionIcon(1)
+    } else {
+      setPositionIcon(positionIcon + 1)
+    }
+  }
+
+  useEffect(() => {
+    setTimeout(timer, 3000)
+  }, [])
+  useEffect(() => {
+    setTimeout(timer, 3000)
+  }, [positionIcon])
+
   return (
     <Container>
       <section className="skills" id="skills" data-aos="fade-up">
         <div className="title">
-          <div className="icon">
+          <div className="icon-title">
             <svg height="50" width="50">
               <polygon points="25,5 5,25 25,45 45,25" className="outsideIcon"/>
               <polygon points="25,14 14,25 25,36 36,25" className="insideIcon"/>
@@ -15,7 +34,15 @@ export const Skills = () => {
           <h2 className="h2">Habilidades</h2>
         </div>
         <div className="icons-wrapper">
-          <div className="icons">
+          <div className={cx(
+            "icons",
+            positionIcon == 1 ? "one" : "",
+            positionIcon == 2 ? "two" : "",
+            positionIcon == 3 ? "three" : "",
+            positionIcon == 4 ? "four" : "",
+            positionIcon == 5 ? "five" : ""
+          )}>
+
             <div>
               <svg viewBox="0 0 128 128" className="icon">
                 <path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"></path><path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"></path><path fill="#EBEBEB" d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"></path><path fill="#fff" d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"></path>

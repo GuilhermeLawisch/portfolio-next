@@ -186,7 +186,7 @@ export const Container = styled.div`
       position: relative;
       /* top: 17.5px; */
 
-      width: 55vw;
+      width: 40vw;
       height: auto;
 
       border-radius: 10px;

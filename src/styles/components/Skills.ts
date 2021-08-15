@@ -30,15 +30,19 @@ export const Container = styled.div`
   }
 
   .icons-wrapper {
-    width: 100%;
+    width: 100%;   
   }
 
   .icons {
     display: flex;
 
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+
+    transition: 0.05s;
+  }
+
+  .icons::-webkit-scrollbar {
+    width: 0px;
   }
 
   .icon {
@@ -47,63 +51,45 @@ export const Container = styled.div`
     width: 300px;
     height: 120px;
 
-    scroll-snap-align: start;
+    scroll-snap-align: start; 
+    transition: 0.2s;
   }
 
-  /* .front {
-    grid-area: front;
+  .icons.one .icon {
+    transform: translate(0px)
   }
-  .backDatabase {
-    grid-area: backdatabase;
+  .icons.two .icon {
+    transform: translate(-300px)
   }
-
-  .outside {
-    color: var(--title);
-
-    display: grid;
-    grid-template-areas:
-      'front'
-      'backdatabase';
-    row-gap: 20px;
-
-    padding: 20px 50px 0;
-    margin: auto;
+  .icons.three .icon {
+    transform: translate(-600px)
   }
-
-  .front,
-  .backDatabase {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  .icons.four .icon {
+    transform: translate(-900px)
   }
-
-  .icons {
-    width: 125px;
-  }
-
-  .h3 {
-    font-family: 'Roboto';
-    font-size: 1.6rem;
-    font-weight: 300;
-    color: var(--title);
+  .icons.five .icon {
+    transform: translate(-1200px)
   }
 
   @media (max-width: 500px) {
-    .icons {
-      width: 110px;
+    .icon {
+      width: 45vw;
+    }
+
+    .icons.one .icon {
+      transform: translate(0vw)
+    }
+    .icons.two .icon {
+      transform: translate(-45vw)
+    }
+    .icons.three .icon {
+      transform: translate(-90vw)
+    }
+    .icons.four .icon {
+      transform: translate(-135vw)
+    }
+    .icons.five .icon {
+      transform: translate(-180vw)
     }
   }
-
-  @media (max-width: 320px) {
-    .outside {
-      padding: 20px;
-    }
-
-    .icons {
-      width: 90px;
-    }
-  } */
-
 `;
