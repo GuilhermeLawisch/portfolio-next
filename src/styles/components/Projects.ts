@@ -184,7 +184,6 @@ export const Container = styled.div`
 
     .image {
       position: relative;
-      /* top: 17.5px; */
 
       width: 40vw;
       height: auto;

@@ -45,51 +45,97 @@ export const Container = styled.div`
     width: 0px;
   }
 
-  .icon {
+  .outside-icon {
     flex: none;
 
-    width: 300px;
-    height: 120px;
+    width: 80px;
+    margin: 0 60px;
 
     scroll-snap-align: start; 
-    transition: 0.2s;
+    transition: 0.05s;
+
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
-  .icons.one .icon {
+  .icons svg {
+    width: 80px;
+    height: 80px;
+
+    margin: auto;
+  }
+
+  .barAll {
+    width: 100%;
+    height: 5px;
+    margin: 32px 0 -5px; 
+
+    background: rgba(100, 100, 255, 0.4);
+    border-radius: 5px;
+  }
+  .barPercentCSS {
+    height: 5px;
+    margin-bottom: 16px;
+
+    background: #3185fc;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .progressPercent {
+    font-family: 'Roboto';
+    font-size: 1.2rem;
+    color: rgb(210, 234, 255);
+    text-align: center;
+  }
+
+  .icons.one .outside-icon {
     transform: translate(0px)
   }
-  .icons.two .icon {
-    transform: translate(-300px)
+  .icons.two .outside-icon {
+    transform: translate(-200px)
   }
-  .icons.three .icon {
+  .icons.three .outside-icon {
+    transform: translate(-400px)
+  }
+  .icons.four .outside-icon {
     transform: translate(-600px)
   }
-  .icons.four .icon {
-    transform: translate(-900px)
+  .icons.five .outside-icon {
+    transform: translate(-800px)
   }
-  .icons.five .icon {
+  .icons.six .outside-icon {
+    transform: translate(-1000px)
+  }
+  .icons.seven .outside-icon {
     transform: translate(-1200px)
   }
 
   @media (max-width: 500px) {
-    .icon {
-      width: 45vw;
+    .outside-icon {
+      width: 35vw;
+      margin: 5vw;
     }
 
-    .icons.one .icon {
+    .icons.one .outside-icon {
       transform: translate(0vw)
     }
-    .icons.two .icon {
+    .icons.two .outside-icon {
       transform: translate(-45vw)
     }
-    .icons.three .icon {
+    .icons.three .outside-icon {
       transform: translate(-90vw)
     }
-    .icons.four .icon {
+    .icons.four .outside-icon {
       transform: translate(-135vw)
     }
-    .icons.five .icon {
+    .icons.five .outside-icon {
       transform: translate(-180vw)
+    }
+    .icons.six .outside-icon {
+      transform: translate(-225vw)
+    }
+    .icons.seven .outside-icon {
+      transform: translate(-270vw)
     }
   }
 `;
