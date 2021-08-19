@@ -52,7 +52,7 @@ export const Container = styled.div`
     margin: 0 60px;
 
     scroll-snap-align: start; 
-    transition: 0.05s;
+    transition: 0.1s;
 
     display: grid;
     grid-template-columns: 1fr;
@@ -136,6 +136,15 @@ export const Container = styled.div`
     }
     .icons.seven .outside-icon {
       transform: translate(-270vw)
+    }
+    .icons.eight .outside-icon {
+      transform: translate(-315vw)
+    }
+    .icons.nine .outside-icon {
+      transform: translate(-360vw)
+    }
+    .icons.ten .outside-icon {
+      transform: translate(-405vw)
     }
   }
 `;
